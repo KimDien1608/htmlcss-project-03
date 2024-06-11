@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-background: #10375c;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -10,3 +14,322 @@ body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
 }
+
+.section-heading {
+    margin-top: 170px;
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    margin-top: 18px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66;
+}
+
+.header {
+    min-height: 100vh;
+    background: var(--header-background);
+    padding-top: 30px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 1170px;
+    height: 800px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    --height: 60px;
+    border-radius: 30px;
+    background: #2e80ce;
+    width: 205px;
+    height: var(--height);
+    flex-shrink: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: var(--height);
+    text-decoration: none;
+    padding: 0 46px;
+}
+
+/* ================ Logo ================ */
+.logo {
+    display: inline-flex;
+    position: relative;
+}
+
+.logo__circle::before,
+.logo__circle::after {
+    content: "";
+    display: inline-flex;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2e80ce;
+}
+
+.logo__circle::after {
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+    position: absolute;
+    left: 1.1em;
+    top: 1.1em;
+}
+
+.logo__text {
+    display: inline-block;
+    margin-left: 0.6em;
+    text-align: right;
+}
+
+.logo__brand {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* ================ Navbar & Login ================ */
+.navbar__list {
+    display: flex;
+}
+
+.header-action__login,
+.navbar__link {
+    color: #c9d2da;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 28px;
+    text-decoration: none;
+    padding: 8px 21px;
+}
+
+.header-action__login:hover,
+.navbar__link:hover {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 99px;
+    background: #fff;
+    position: relative;
+    left: -8px;
+    top: -2px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.header-action {
+    display: flex;
+}
+
+.header-action__signup {
+    --height: 44px;
+    width: 104px;
+    margin-left: 7px;
+    padding: 0px;
+}
+
+/* ================ Hero ================ */
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+}
+
+.hero__content {
+    flex-shrink: 0; /* huỷ co nhỏ thông tin */
+    width: 44%; /* lấy width 517 / width 1170 = 44% */
+}
+
+.hero__heading {
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14; /* 114.286% */
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    width: 468px;
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66;
+}
+
+.hero__row {
+    margin-top: 38px;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+}
+
+.hero__media {
+    flex-grow: 1; /* flex-grow 1 để chiếm phần còn lại */
+}
+
+.hero__images {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    position: relative; /* Ưu tiên nằm trên */
+    margin-right: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    flex-shrink: 0;
+}
+
+/* ================ Service ================ */
+.service__heading,
+.service__desc {
+    text-align: center;
+}
+
+.service__desc {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service-item__icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    top: 1234px;
+    left: 857px;
+    gap: 0px;
+    border-radius: 50%;
+    color: #10375c;
+    background: #eff6fd;
+    opacity: 0px;
+}
+
+.service-item {
+    display: flex;
+    width: 470px;
+    height: 128px;
+    flex-shrink: 0;
+    padding: 22px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon-wrap {
+    background: #2e80ce;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.service-item__body {
+    padding-left: 20px;
+}
+
+.service-item__heading {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.service-btn {
+    margin-top: 55px;
+}
+
+/* ================ Work ================ */
