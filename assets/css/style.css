@@ -400,3 +400,54 @@ body {
     font-weight: 400;
     line-height: 1.75;
 }
+
+/* ================ Feature ================ */
+.feature {
+    display: flex;
+    margin-top: 170px;
+}
+
+.container__feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 491px;
+}
+
+.feature__media {
+    width: 48%;
+    height: 491px;
+}
+
+.feature__img:first-child {
+    width: 512px;
+    height: 370px;
+    top: 2914px;
+    left: 135px;
+    gap: 0px;
+    border-radius: 6px;
+    opacity: 0px;
+    object-fit: cover;
+}
+
+.feature__img:last-child {
+    position: relative;
+    left: 238px;
+    top: -261px;
+    width: 332px;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
+.feature-heading {
+    width: 470px;
+}
+
+.feature-desc {
+    width: 468px;
+}
+
+.feature-btn {
+    margin-top: 38px;
+}
