@@ -541,3 +541,54 @@ body {
 .member__control-icon {
     rotate: 180deg;
 }
+
+/* ================ Install ================ */
+.install {
+    margin-top: 170px;
+}
+
+.install__inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    height: 427px;
+    border-radius: 4px;
+    background: #2e80ce;
+}
+
+.install__img {
+    position: relative;
+    left: 70px;
+    bottom: 95px;
+    width: 284px;
+    height: 522px;
+}
+
+.install__content {
+    width: 586px;
+    height: 276px;
+    margin: 76px 70px;
+}
+
+.install__content-heading {
+    color: #ffffff;
+}
+
+.install__content-desc {
+    color: #ffffff;
+    width: 100%;
+    height: 60px;
+}
+
+.install__row {
+    display: flex;
+    gap: 28px;
+    margin-top: 38px;
+}
+
+.install__btn {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+}
