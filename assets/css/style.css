@@ -45,7 +45,6 @@ body {
 
 .container {
     width: 1170px;
-    height: 800px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
@@ -512,13 +511,13 @@ body {
     text-align: center;
 }
 
-.member__control {
+.control {
     display: flex;
     gap: 18px;
     margin-top: 38px;
 }
 
-.member__control-btn {
+.control-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -531,20 +530,20 @@ body {
     transition: 0.25s;
 }
 
-.member__control-btn:hover {
+.control-btn:hover {
     color: #ffffff;
     border-color: #2e80ce;
     background: #2e80ce;
     cursor: pointer; /* đổi mũi tên thành trỏ tay */
 }
 
-.member__control-icon {
+.control-icon {
     rotate: 180deg;
 }
 
 /* ================ Install ================ */
 .install {
-    margin-top: 170px;
+    margin-top: 265px;
 }
 
 .install__inner {
@@ -591,4 +590,87 @@ body {
     border: none;
     background: none;
     padding: 0;
+}
+
+/* ================ News ================ */
+.news {
+    margin-top: 170px;
+}
+
+.container__news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__content {
+    width: 470px;
+    height: 240px;
+}
+
+.news__more {
+    display: block;
+    margin-top: 28px;
+    color: #10375c;
+}
+
+.control__news {
+    margin-top: 28px;
+}
+
+.news__list {
+    display: flex;
+    gap: 30px;
+}
+
+.news-item {
+    width: 270px;
+    height: 375px;
+    border-radius: 14px;
+    border: 1px solid #e8ebee;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.news-item:hover {
+    transform: translateY(-6px);
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.news-item__thumb {
+    width: 270px;
+    height: 172px;
+    border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
+}
+
+.news-item__body {
+    padding: 20px;
+}
+
+.news-item__heading {
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.62;
+    text-decoration: none;
+}
+
+.news-item__desc {
+    margin-top: 10px;
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.71;
+}
+
+.news-item__more {
+    display: block;
+    margin-top: 12px;
+    color: #2e80ce;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
 }
