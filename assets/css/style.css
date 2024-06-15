@@ -674,3 +674,53 @@ body {
     font-weight: 400;
     text-decoration: none;
 }
+
+/* ================ Appointment ================ */
+.appointment {
+    margin-top: 170px;
+}
+
+.appointment__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1170px;
+    height: 452px;
+    flex-shrink: 0;
+    padding: 100px 0 100px 0;
+    background: #f6fbff;
+}
+
+.appointment__heading {
+    position: relative;
+}
+
+.appointment__heading::after {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 78px;
+    /* right: 50%;                        Căn giữa cách 2
+    transform: translateX(50%); */
+    width: 136px;
+    height: 2px;
+    flex-shrink: 0;
+    background: #2e80ce;
+}
+
+.appointment-desc {
+    margin-top: 38px;
+    width: 617px;
+    text-align: center;
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.appointment-btn {
+    margin-top: 38px;
+}
